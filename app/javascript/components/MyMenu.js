@@ -21,7 +21,7 @@ class MyMenu extends React.Component {
           <MailOutlined />
           Navigation One
         </Menu.Item>
-        <Menu.Item key="app" disabled>
+        <Menu.Item key="app" >
           <AppstoreOutlined />
           Navigation Two
         </Menu.Item>
@@ -43,7 +43,7 @@ class MyMenu extends React.Component {
           </Menu.ItemGroup>
         </SubMenu>
         <Menu.Item key="alipay">
-          <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
+          <a href="/title/index"  rel="noopener noreferrer">
             Navigation Four - Link
           </a>
         </Menu.Item>
