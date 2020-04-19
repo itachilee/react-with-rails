@@ -894,7 +894,14 @@
   resolved "https://registry.npm.taobao.org/@rails/actioncable/download/@rails/actioncable-6.0.2.tgz#bcba9bcd6ee09a47c6628336e07399a68ca87814"
   integrity sha1-vLqbzW7gmkfGYoM24HOZpoyoeBQ=
 
-"@rails/activestorage@^6.0.0":
+"@rails/actiontext@6.0.2-2":
+  version "6.0.2-2"
+  resolved "https://registry.npm.taobao.org/@rails/actiontext/download/@rails/actiontext-6.0.2-2.tgz#57482adbbfaab65520b5433e7e44d63b7784c739"
+  integrity sha1-V0gq27+qtlUgtUM+fkTWO3eExzk=
+  dependencies:
+    "@rails/activestorage" "^6.0.0-alpha"
+
+"@rails/activestorage@^6.0.0", "@rails/activestorage@^6.0.0-alpha":
   version "6.0.2"
   resolved "https://registry.npm.taobao.org/@rails/activestorage/download/@rails/activestorage-6.0.2.tgz#3882da2716d1f21091840fc52b71091d406a9c43"
   integrity sha1-OILaJxbR8hCRhA/FK3EJHUBqnEM=
@@ -7811,6 +7818,11 @@ trim-newlines@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/trim-newlines/download/trim-newlines-1.0.0.tgz#5887966bb582a4503a41eb524f7d35011815a613"
   integrity sha1-WIeWa7WCpFA6QetST301ARgVphM=
+
+trix@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/trix/download/trix-1.0.0.tgz#e9cc98cf6030c908f8d54e317b5b072f927b0c6b"
+  integrity sha1-6cyYz2AwyQj41U4xe1sHL5J7DGs=
 
 "true-case-path@^1.0.2":
   version "1.0.3"

@@ -13,6 +13,7 @@ import RailsTypography from './RailsTypography';
 import RailsTitle from './RailsTitle';
 class MyLayout extends React.Component {
   render() {
+    let name=[];
     return (
       <Layout>
         <MyMenu />
@@ -83,8 +84,8 @@ class MyLayout extends React.Component {
                 minHeight: 280,
               }}
             >
-                <RailsTitle/>
-              <RailsTypography/>
+                <RailsTitle />                
+              <RailsTypography />
             </Content>
           </Layout>
         </Layout>

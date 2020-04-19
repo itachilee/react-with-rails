@@ -56,7 +56,7 @@ class RailsTypography extends React.Component{
             </Paragraph>
             <Title level={2}>设计资源</Title>
             <Paragraph>
-              我们提供完善的设计原则、最佳实践和设计资源文件（<Text code>Sketch</Text> 和
+              <Text editable>我们提供完善的设计原则、最佳实践和设计资源文件</Text>（<Text code>Sketch</Text> 和
               <Text code>Axure</Text>），来帮助业务快速设计出高质量的产品原型。
             </Paragraph>
             <Paragraph>
