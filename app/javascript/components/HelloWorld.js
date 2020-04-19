@@ -1,38 +1,38 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Button } from 'antd';
-import { hot } from 'react-hot-loader';
+import { Button } from "antd";
+import { hot } from "react-hot-loader";
 
 class HelloWorld extends React.Component {
+ 
   constructor(props) {
     super(props);
-    this.state = { 
-      bolgs:   [],
-      count: 0
+    this.state = {
+      items: []
     };
   }
-  
+  // componentDidMount() {
+  //   $.getJSON("/api/v1/items.json", (response) => {
+  //     this.setState({ items: response });
+  //   });
+  // }
+
   componentDidMount(){
-    console.log(this.props.blog);
-    console.log("state.count:"+this.state.count);
-    this.setState({bolgs: this.props.blog,count: this.state.count+1});
-    console.log("state:"+this.state.bolgs);
-    console.log("state.count:"+this.state.count);
+    fetch('/api/v1/items.json')
+      .then((response) => {return response.json()})
+      .then((data) => {this.setState({ items: data }) });
   }
-  render () {
-    // this.state.bolgs.map((b)=>
-    //   {
-    //     return(
-    //       <React.Fragment>
-    //         gameName: {b.title}
-    //         createTime: {b.created_at}
-    //       </React.Fragment>
-    //     )
-    //   }
-    // )
-   return(
-     <div> nothing</div>
-   )
+  render() {
+    var items = this.state.items.map((item,key) => {
+      return (
+        <div key={key}>
+          <h3 >{item.name}</h3>
+          <p >{item.description}</p>
+        </div>
+      );
+    });
+
+    return <div>{items}</div>;
   }
 }
 
@@ -40,4 +40,4 @@ class HelloWorld extends React.Component {
 //   gameName: PropTypes.string,
 //   createTime: PropTypes.string
 // };
-export default hot(module)(HelloWorld)
+export default hot(module)(HelloWorld);
